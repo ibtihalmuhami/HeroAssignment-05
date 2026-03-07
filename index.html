@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Tracker</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- daisyui + Tailwind -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <!-- stylesheet -->
+       <link rel="stylesheet" href="style/style.css">
+    <!-- styles -->
+     <style>
+        * {
+            font-family: "Geist", sans-serif;
+
+        }
+     </style>
+
+</head>
+<body class="min-h-screen max-w-md bg-base-200 mx-auto">
+    <div class="logo w-[200px] mx-auto pt-32 pb-5">
+        <img src="assets/github-logo.png" alt="">
+    </div>
+    <div>
+        <h1 class="text-4xl font-bold text-center">GitHub Issues Tracker</h1>
+         <p class="text-center text-sm mt-2 text-gray-500">Sign in to manage your issues</p>
+    </div>
+    <div>
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mx-auto mt-10">
+            <div class="card-body">
+                <fieldset class="fieldset">
+                    <label class="label font-extrabold text-black">Username</label>
+                    <input id="input-username" type="text" class="input" placeholder="Enter your username" />
+                    <label class="label font-extrabold text-black">Password</label>
+                    <input id="input-password" type="password" class="input" placeholder="Enter your password" />
+                    <button id="login-btn" class="btn btn-neutral bg-blue-700 mt-4">Sign In</button>
+                </fieldset>
+            </div>
+        </div>
+
+    </div>
+    <!-- javascript -->
+     <script src="script/login.js"></script>
+</body>
+</html>
