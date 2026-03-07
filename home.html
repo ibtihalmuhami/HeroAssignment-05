@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home page</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- daisyui + Tailwind -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <!-- stylesheet -->
+       <link rel="stylesheet" href="style/style.css">
+
 </head>
 <body>
-    <h2 class="text-3xl font-extrabold">vallagena</h2>
+    <!-- navbar -->
+    <header >
+        <div class="flex justify-between items-center px-10 py-3 ">
+
+        
+            <div class="logo flex items-center gap-2">
+                <img src="/assets/github-logo.png" alt="">
+                <h2 class="font-bold text-2xl">GitHub Issues Tracker</h2>
+                
+            </div>
+            <div class="nav-right flex items-center gap-1">
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass translate-x-8"></i>
+                    <input type="text" name="" id="" class="pl-7 " placeholder="Search Issues...">
+    
+                </div>
+                <button class="new-issue-btn text-white w-auto bg-blue-700">+ New Issue</button>
+    
+            </div>
+        </div>
+    </header>
+
+    <!-- three buttons -->
+     <section class="min-h-screen w-[80%] bg-base-200 mx-auto border mt-5 border-red-500 border-r-4">
+
+        <div class="pl-7">
+            <button id="all-filtered-btn" class="btn btn-neutral bg-blue-700 mt-4">All </button>
+            <button id="open-filtered-btn" class="btn btn-neutral bg-white text-gray-400 mt-4">Open </button>
+            <button id="closed-filtered-btn" class="btn btn-neutral bg-white text-gray-400 mt-4">Closed </button>
+
+        </div>
+     </section>
+
+
+
+
+
+
+
 </body>
 </html>
