@@ -14,6 +14,8 @@ document.getElementById("login-btn").addEventListener("click", function() {
     //3-- match the username and password
     if (contactUsername === "admin" && contactPassword === "admin123") {
         alert("Login successful");
+
+        window.location.assign("/home.html");
     }
     else {
         alert("Login failed. Please check your username and password.");
