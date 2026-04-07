@@ -199,6 +199,7 @@ function renderIssues(issues) {
         `;
 
         card.addEventListener("click", function () {
+            alert("Card clicked");
             loadSingleIssue(issue.id);
         });
 
@@ -260,6 +261,7 @@ async function loadSingleIssue(id) {
 
             singleIssueDetails.classList.remove("hidden");
         }
+        // if error occurs while fetching single issue details, we can show an alert or log the error
     } catch (error) {
         console.log("Failed to load single issue:", error);
     }
